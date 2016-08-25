@@ -8,7 +8,7 @@ var port = new SerialPort("/dev/tty-usbserial1", {
 
 var SerialPort = require("serialport").SerialPort;
 var serialPort = new SerialPort("/dev/ttyACM0", {
-    baudRate: 9600
+    baudRate: 115200
 });
 
 serialPort.on("open", function () {
