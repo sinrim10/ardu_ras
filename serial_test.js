@@ -18,7 +18,7 @@ serialPort.on("open", function () {
         console.log('data received: ' + data);
     });
 
-    serialPort.write(new Buffer('4','ascii'), function(err, results) {
+    serialPort.write(new Buffer('31','ascii'), function(err, results) {
         console.log('err ' + err);
         console.log('results ' + results);
     });
